@@ -1,0 +1,518 @@
+/* VARIABLES */
+
+$nav-padding: 3px 30px 0px 30px;
+
+$nav-font-size: 1.1rem;
+
+$nav-background: rgb(252, 252, 252);
+
+$nav-color: #712cb1;
+
+$hover-color: #b875f7;
+
+$secondary-gradient-color: 	#f186f1;
+
+$button-gradient: (90deg, #822dd1, #d365d3);
+
+$button-gradient-hover: (90deg, #8846c7, $secondary-gradient-color);
+
+$paragraph-color: rgb(85, 84, 84);
+
+$paragraph-color-2: rgb(236, 236, 236);
+
+$purple-shadow: (-10px 5px 20px 2px #5c278d);
+
+$white-shadow: -10px 5px 20px 0px #dadada;
+
+$purple-background: (180deg, $nav-color, #a840e4);
+
+
+
+/* IMPORT */
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+////////////////////////////////////////////
+
+/* General Rules */
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+////////////////////////////////////////////
+
+/* NAVBAR */
+
+nav{
+    position: fixed;
+    margin-top: 0px;
+    z-index: 9;
+}
+
+li{
+    font-size: $nav-font-size;
+}
+
+#nav-bar{
+    display: flex;
+    background-color: $nav-background;
+    color: $nav-color;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 9;
+    /* box-shadow: 2px 0px 15px 1px #E6E6FA */;
+}
+
+.navbar-container{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-img{
+    width: 23px;
+}
+
+.navbar-links{
+    display: flex;
+}
+
+.navbar-links-li{
+    list-style: none;
+    display: flex;
+    padding: $nav-padding;
+    text-decoration: none;
+}
+
+.navbar-links-li:hover{
+    color: $hover-color;
+}
+
+.navbar-links-li-button{
+    list-style: none;
+    background: linear-gradient($button-gradient);
+    color: white;
+    background-size: 7rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-top: 0;
+    border-radius: 20px;
+}
+
+.navbar-links-li-button:hover{
+    cursor: pointer;
+    background: linear-gradient($button-gradient-hover);
+}
+
+/////////////////////////////
+
+/* HOME */
+
+
+
+.home{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    background: linear-gradient($purple-background);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.home-image img{
+    width: 400px;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+.home-title{
+    max-width: 330px;
+    padding-top: 3rem;
+}
+
+.home-title h1{
+    color: white;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.home-title p{
+    color: $paragraph-color-2;
+    padding-top: 0;
+}
+
+#start-now{
+    color: white;
+    background: linear-gradient($button-gradient);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    box-shadow: $purple-shadow;
+}
+
+#start-now:hover{
+    cursor: pointer;
+    background: linear-gradient($button-gradient-hover);
+}
+
+
+
+///////////////////////////////////
+
+/* HOW IT WORKS? */
+
+.hiw{
+    display: flex;
+    justify-content: center;
+}
+
+.hiw-image{
+    width: 300px;
+    transform: scaleX(-1);
+    margin-top: -30px;
+}
+
+.hiw-text{
+    max-width: 430px;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    color: $nav-color;
+}
+
+.hiw-text h1{
+    margin-bottom: 0px;
+}
+
+.hiw-text p{
+    color: $paragraph-color;
+}
+
+/* THE DESIGN */
+
+.the-design{
+    max-width: 730px;
+    margin: 10px auto 0 auto;
+    padding-top: 1.5rem;
+}
+
+.the-design h1{
+    color: $nav-color;
+}
+
+.the-design p{
+    color: $paragraph-color;
+}
+
+/* THE PLATAFORM */
+
+.the-plataform{
+    max-width: 730px;
+    margin: 10px auto 0 auto;
+    padding-top: 1.5rem;
+}
+
+.the-plataform h1{
+    color: $nav-color;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.the-plataform p{
+    color: $paragraph-color;
+}
+
+.test-right{
+    text-align: right;
+}
+
+#plataform{
+    color: white;
+    background: linear-gradient($button-gradient);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10 auto 10 auto;
+    box-shadow: $white-shadow;
+    float:right;
+}
+
+#plataform:hover{
+    cursor: pointer;
+    background: linear-gradient($button-gradient-hover);
+}
+
+
+/////////////////////////////
+
+/* VIDEO DEMONSTRATION */
+
+.video {
+    text-align: center;
+    background: linear-gradient($purple-background);
+    padding-top: 1rem;
+}
+
+.video h1{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.video > iframe {
+    background: black;
+    border: none;
+    height: 340px;
+    width: 730px;
+    border-radius: 30px;
+    box-shadow: $purple-shadow;
+}
+
+.video p{
+    text-align: center;
+    color: $paragraph-color-2;
+    padding-bottom: 2rem;
+}
+
+////////////////////////////////
+
+/* PLANS */
+
+#third-section-plans h1{
+    text-align: center;
+    padding-top: 2rem;
+    color: $nav-color;
+}
+
+#third-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+#third-section p{
+    line-height: 40px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+  
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(730px / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+  
+.plan > .level {
+    background: $nav-color;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+  
+.plan > h2 {
+    margin-top: 15px;
+}
+  
+.plan > ol {
+    margin: 0px 0;
+    justify-content: center;
+}
+  
+.plan > ol > li {
+    padding: 5px 0;
+    justify-content: center;
+}
+  
+.plan > button {
+    color: white;
+    background: linear-gradient($button-gradient);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 20px auto 20px auto;
+    box-shadow: $white-shadow;
+}
+  
+.plan > button:hover {
+    cursor: pointer;
+    background: linear-gradient($button-gradient-hover);
+}
+
+s{
+    color: #818181;
+}
+  
+@media (max-width: 800px) {
+    #third-section {
+      flex-direction: column;
+    }
+    .plan {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+}
+
+//////////////////////////////
+
+/* FORM */
+
+#fourth-section{
+    display: flex;
+    padding-top: 4rem;
+    background: linear-gradient($purple-background);
+    justify-content: center;
+}
+
+.form-img{
+    width: 430px;
+    padding-bottom: 2rem;
+}
+
+.register{
+    color: white;
+}
+
+.form-group{
+    padding-bottom: 2rem;
+}
+
+.form-group p{
+    padding: 0;
+    margin-top: -20px;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input{
+    height: 1.7rem;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 1rem;
+}
+
+#submit-r{
+    color: white;
+    background: linear-gradient($button-gradient);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10 auto 10 auto;
+    box-shadow: $purple-shadow;
+    height: 2.8rem;
+}
+
+#submit-r:hover{
+    cursor: pointer;
+    background: linear-gradient($button-gradient-hover);
+}
+
+////////////////////////////////////
+
+/* MESSAGE FORM */
+
+#fifth-section{
+    width: 730px;
+    margin: 0 auto 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#fifth-section h1{
+    color: $nav-color;
+}
+
+#fifth-section p{
+    color: $paragraph-color;
+}
+
+#fifth-section label{
+    color: $nav-color;
+}
+
+#fifth-section input{
+    border: 2px solid $paragraph-color-2;
+    border-radius: 7px;
+}
+
+#fifth-section textarea{
+    border: 2px solid $paragraph-color-2;
+    border-radius: 7px;
+    width: 450px;
+    height: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+
+#submit{
+    color: white;
+    background: linear-gradient($button-gradient);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 2.8rem;
+    border: 2px solid transparent;
+}
+
+///////////////////////////////
+
+/* CREDITS */
+
+.credits{
+    background: linear-gradient($button-gradient);
+    padding-bottom: 0;
+    margin-bottom: -16px;
+}
+
+.credits p{
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    color: white;
+}
