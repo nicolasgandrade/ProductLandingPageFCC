@@ -62,6 +62,12 @@ nav{
     z-index: 9;
 }
 
+@media (max-width: 730px){
+    nav{
+      display: none;
+    }
+}
+
 li{
     font-size: $nav-font-size;
 }
@@ -76,6 +82,12 @@ li{
     font-weight: bold;
     z-index: 9;
     /* box-shadow: 2px 0px 15px 1px #E6E6FA */;
+}
+
+@media (max-width: 730px){
+    #nav-bar{
+      display: none;
+    }
 }
 
 .navbar-container{
@@ -134,7 +146,7 @@ li{
     justify-content: center;
     background: linear-gradient($purple-background);
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .home-image img{
@@ -177,6 +189,41 @@ li{
     background: linear-gradient($button-gradient-hover);
 }
 
+@media (max-width: 810px){
+    .home-image img{
+      width: 50vw;
+    }
+    .home-title{
+      padding-left: 40px;
+    }
+}
+  
+@media (max-width: 730px){
+    .home{
+      display: block;
+      text-align: center;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 4rem;
+      margin-top: -20px;
+    }
+    
+    .home-title{
+      max-width: 730px;
+      margin: 20px 45px 20px 0px;
+      display: block;
+    }
+    
+    .home h1{
+      padding-top: 2rem;
+      margin-top: 0px;
+    }
+    
+    .home-image img{
+      display: none;
+    }
+}
+
 
 
 ///////////////////////////////////
@@ -209,6 +256,35 @@ li{
     color: $paragraph-color;
 }
 
+@media (max-width: 830px){
+    .hiw-image{
+      margin-left: 2rem;
+    }
+}
+  
+
+@media (max-width: 710px){
+    .hiw{
+      display: block;
+    }
+    
+    .hiw-image{
+      display: none;
+    }
+    
+    .hiw-text h1{
+      text-align: left;
+    }
+    
+    .hiw-text{
+      max-width: 630px;
+      text-align: left;
+      margin: 0 45px 0 15px;
+      padding: 0 auto 0 auto;
+      justify-content: center;
+    }
+}
+
 /* THE DESIGN */
 
 .the-design{
@@ -225,12 +301,38 @@ li{
     color: $paragraph-color;
 }
 
+@media (max-width: 830px){
+    .the-design{
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+}
+
+@media (max-width: 710px){
+    .the-design{
+      max-width: 630px;
+      margin: 10px 45px 0 45px;
+    }
+    
+    .the-design h1{
+      padding-top: 0rem;
+    }
+  }
+
+
 /* THE PLATAFORM */
 
 .the-plataform{
     max-width: 730px;
     margin: 10px auto 0 auto;
     padding-top: 1.5rem;
+}
+
+@media (max-width: 830px){
+    .the-plataform{
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
 }
 
 .the-plataform h1{
@@ -242,6 +344,19 @@ li{
 .the-plataform p{
     color: $paragraph-color;
 }
+
+@media (max-width: 710px){
+  .the-plataform{
+    max-width: 630px;
+    margin: 10px 45px 0 45px;
+  }
+  
+  .the-plataform h1{
+    text-align: left;
+    padding-top: 2rem;
+  }
+}
+
 
 .test-right{
     text-align: right;
@@ -264,6 +379,16 @@ li{
 #plataform:hover{
     cursor: pointer;
     background: linear-gradient($button-gradient-hover);
+}
+
+@media (max-width: 710px){
+  .test-right{
+    text-align: left;
+  }
+  
+  #plataform{
+    float: left;
+  }
 }
 
 
@@ -296,6 +421,27 @@ li{
     text-align: center;
     color: $paragraph-color-2;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 810px){
+    .video > iframe{
+      width: 75vw;
+      height: 45vw;
+    }
+    
+    .video p{
+      max-width: 730px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    
+    .video h1{
+      max-width: 730px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
 }
 
 ////////////////////////////////
@@ -401,9 +547,23 @@ s{
     justify-content: center;
 }
 
+@media (max-width: 710px){
+  #fourth-selection{
+    display: block;
+    margin: 0 45px 0 45px;
+    padding-left: 5rem;
+  }
+}
+
 .form-img{
     width: 430px;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 710px){
+  .form-img{
+    display: none;
+  }
 }
 
 .register{
@@ -432,6 +592,12 @@ input{
     padding-left: 1rem;
 }
 
+@media (max-width: 710px){
+  input{
+    width: 90vw;
+  }
+}
+
 #submit-r{
     color: white;
     background: linear-gradient($button-gradient);
@@ -451,68 +617,108 @@ input{
     background: linear-gradient($button-gradient-hover);
 }
 
+@media (max-width: 710px){
+  #submit-r{
+    width: 80vw;
+    justify-content: center;
+  } 
+}
+
 ////////////////////////////////////
 
 /* MESSAGE FORM */
 
-#fifth-section{
-    width: 730px;
-    margin: 0 auto 0 auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
 
-#fifth-section h1{
-    color: $nav-color;
-}
 
-#fifth-section p{
-    color: $paragraph-color;
-}
-
-#fifth-section label{
-    color: $nav-color;
-}
-
-#fifth-section input{
-    border: 2px solid $paragraph-color-2;
-    border-radius: 7px;
-}
-
-#fifth-section textarea{
-    border: 2px solid $paragraph-color-2;
-    border-radius: 7px;
-    width: 450px;
-    height: 100px;
+ /* Style inputs, select elements and textareas */
+ #fifth-section input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    resize: vertical;
+    border-radius: 20px;
+    box-shadow: -6px 3px 5px rgb(223, 223, 223);
     font-family: 'Ubuntu', sans-serif;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-}
-
-
-#submit{
-    color: white;
+  }
+  
+  /* Style the label to display next to the inputs */
+  #fifth-section label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: $nav-color;
+  }
+  
+  /* Style the submit button */
+  #fifth-section input[type=submit] {
     background: linear-gradient($button-gradient);
+    color: white;
+    padding: 12px 20px 28px 20px;
+    outline: none;
+    border-radius: 150px;
+    cursor: pointer;
+    float: right;
+    font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 1.1rem;
-    height: 2.8rem;
-    border: 2px solid transparent;
-}
+  }
+  
+  /* Style the container */
+  #fifth-section {
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 50px;
+    max-width: 730px;
+    margin: 0 auto 0 auto;
+  }
 
-///////////////////////////////
+  #fifth-section input[type=email]{
+    box-shadow: -6px 3px 5px rgb(223, 223, 223);
+    width: 100%;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-/* CREDITS */
+  
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 7100px) {
+    .col-25, .col-75, #fifth-section input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } 
 
-.credits{
-    background: linear-gradient($button-gradient);
-    padding-bottom: 0;
-    margin-bottom: -16px;
-}
+  //////////////////////////////////
 
-.credits p{
+  /* CREDTS */
+
+  .credits p{
     text-align: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    color: white;
-}
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: $nav-color;
+    text-shadow: 10px 10px 10px 10px $white-shadow;
+  }

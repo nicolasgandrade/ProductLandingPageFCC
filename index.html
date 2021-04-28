@@ -30,7 +30,7 @@
                             <li class="navbar-links-li-button">Try it</li></a> 
                 </ul>
             </div>
-        </nav><br><br><br>
+        </nav>
         </header>
 
         
@@ -46,14 +46,14 @@
             </div>
 
                 <div class="home-image">
-                    <img src="illustration-1.svg">
+                    <img src="images/illustration-1.svg">
                 </div>
             </div>
         </div>
 
         <div class="hiw" id="second-section">
             <div class="hiw-image">
-                <img src="illustration-2.svg">
+                <img src="images/illustration-2.svg">
             </div>
             <div class="hiw-text">
                 <h1>How it Works?</h1>
@@ -167,34 +167,44 @@
                 </div>
             </form>
             <div class="form-img">
-                <img src="app-user-colour.svg">
+                <img src="images/app-user-colour.svg">
             </div>
 
             
         </div>
 
-        <div id="fifth-section">
-            <h1>Any Questions?</h1>
-            <p>Send us an email if you still have questions or want to hire an exclusive package of high standard.</p>
-            <br><br>
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <div class="form-group">
-                    <label id="email-label" for="email">Email</label><br>
-                    <input type="email" class="form-input" name="email" id="email" placeholder="Enter your email here" required>
-                </div>
-                <div class="form-group">
-                    <label for="" id="subject-label">Subject</label><br>
-                    <input type="text" class="form-input" name="subject" id="subject" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                    <label for="textarea" id="textarea-label">Message:</label><br>
-                    <textarea type="textarea" id="textarea" class="textarea-input" name="textarea" placeholder="Put your message here"></textarea>
-                </div>
-                <div class="form-group">
-                    <input id="submit" type="submit" value="Submit" class="btn" action="https://www.freecodecamp.com/email-submit">
-                </div><br>
-            </form>
+        
 
+        <div id="fifth-section">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="name2">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="name2" placeholder="Enter your name here">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write your message here" style="height:200px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit" id="submit">
+                </div>
+              </form>
         </div>
 
         <div class="credits">
