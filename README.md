@@ -4,6 +4,6 @@ This is a Product Landing Page made for completing the FreeCodeCamp Responsive W
 
 ## Icons
 
-**:up: new functionality**
+**:up: new functionality commit**
 
-**:package: file location change**
+**:package: file location change commit**
