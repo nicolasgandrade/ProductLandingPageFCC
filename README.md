@@ -5,7 +5,4 @@ This is a Product Landing Page made for completing the FreeCodeCamp Responsive W
 ## Icons
 
 **:up: new functionality**
-
-&nbsp;
-
 **:package: file location change**
