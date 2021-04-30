@@ -7,3 +7,10 @@ This is a Product Landing Page made for completing the FreeCodeCamp Responsive W
 **:up: new functionality commit**
 
 **:package: file location change commit**
+
+# Video (GIF) example:
+
+Desktop version
+![Desktop example](https://raw.githubusercontent.com/nicolasgandrade/ProductLandingPageFCC/main/images/PLP2.gif)
+
+![Mobile responsive](https://raw.githubusercontent.com/nicolasgandrade/ProductLandingPageFCC/main/images/PLP_mobile.gif)
