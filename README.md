@@ -1,12 +1,8 @@
 # Product Landing Page
 
-This is a Product Landing Page made for completing the FreeCodeCamp Responsive Web Design course using html and css (with sass pre-processing).
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/> <img alt="SASS" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"/> 
 
-## Icons
-
-**:up: new functionality commit**
-
-**:package: file location change commit**
+This is a front-end Product Landing Page project made for FreeCodeCamp Responsive Web Design course using html and css (with sass pre-processing).
 
 # Video (GIF) example:
 
